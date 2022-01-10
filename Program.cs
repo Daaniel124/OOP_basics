@@ -14,8 +14,19 @@ namespace OOP_basics
             Console.WriteLine(Subprogram.Multiplication(4, 5));
 
 
-            float average = 
+            float rand = Cycle.ArraySize(1, 50);
+            float rand2 = Cycle.ArraySize(1, 50);
+            Console.WriteLine(Subprogram.Average(rand, rand2));
 
+            Console.WriteLine("Введите первый символ:");
+            float a = float.Parse(Console.ReadLine());
+            Console.WriteLine("Введите знак действия:");
+            char oper = char.Parse(Console.ReadLine());
+            Console.WriteLine("Введите второй символ:");
+            float b = float.Parse(Console.ReadLine());
+            
+            Subprogram.CalcMur(a, b, oper);
+            Console.WriteLine();
 
             Console.WriteLine("This is Google Chrome!!1");
             Console.WriteLine("Как тебя зовут?");

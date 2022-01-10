@@ -8,7 +8,7 @@ namespace OOP_basics
 {
     class Cycle
     {
-        static int ArraySize(int min, int max)
+        public static int ArraySize(int min, int max)
         {
             Random rnd = new Random();
             int A = rnd.Next(min, max);
@@ -37,9 +37,24 @@ namespace OOP_basics
             return array;
         }
 
+        static int[,] table = new int[10, 10];
+        static public void TableNumber()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    //Console.Write("{0,4}", i * j);
+                    table[i, j] = (i+1) * (j+1);
+                    Console.Write("{0, 4}", table[i, j]);
+                }
+                Console.WriteLine();
+            }
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            TableNumber();
             //----------------
             //int size = ArraySize(1, 20);
             Console.WriteLine("Напишите размер массива:");

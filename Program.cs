@@ -11,6 +11,12 @@ namespace OOP_basics
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.WriteLine(Subprogram.Multiplication(4, 5));
+
+
+            float average = 
+
+
             Console.WriteLine("This is Google Chrome!!1");
             Console.WriteLine("Как тебя зовут?");
             string name = Console.ReadLine();
